@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SM_TestTwo>
+            <version>1.0.0</version>
+        </SM_TestTwo>
+    </modules>
+    <global>
+        <helpers>
+            <testtwo>
+                <class>SM_TestTwo_Helper</class>
+            </testtwo>
+        </helpers>
+        <blocks>
+            <testtwo>
+                <class>SM_TestTwo_Block</class>
+            </testtwo>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <testtwo>
+                <use>standard</use>
+                <args>
+                    <module>SM_TestTwo</module>
+                    <frontName>testtwo</frontName>
+                </args>
+            </testtwo>
+        </routers>
+        <layout>
+            <updates>
+                <testtwo module="testtwo">
+                    <file>testtwo.xml</file>
+                </testtwo>
+            </updates>
+        </layout>
+    </frontend>
+
+</config>
